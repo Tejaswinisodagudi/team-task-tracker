@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    border-radius: 2px;
+  }
+}
+/* Main Container */
+.main-container {
+  @apply h-screen flex justify-between gap-5 px-10 py-3 max-lg:gap-8;
+}
